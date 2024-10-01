@@ -1,0 +1,24 @@
+/* for all the ul */
+ul {
+    /*  inside
+        The ::marker is the first element among the list item's contents.
+        outside
+        The ::marker is outside the principal block box. This is the default value for list-style. 
+    */
+    list-style-position: inside;
+}
+
+/* for the ul indentation at 4. Interruptions */
+ul ul {
+    padding-left: 1rem;
+}
+
+li {
+    margin-bottom: 0.25rem;
+    line-height: 1.5rem;
+    padding: 10px;
+}
+
+li::marker {
+    color: #0a09ae;
+}
