@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hyperkart - Register</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/register.css" />
+    <script src="scripts/global.js" defer></script>
+    <script src="scripts/register.js" defer></script>
   </head>
   <body>
     <header>
-      <img
-        src="assets/images/logo.png"
-        alt="Logo"
-        class="logo"
-        draggable="false"
-      />
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Logo" draggable="false" />
+      </a>
     </header>
     <main>
       <form id="signupForm">
@@ -22,7 +21,14 @@
           <h2>Register</h2>
           <label>
             Name / Nickname
-            <input type="text" id="name" name="name" required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              aria-invalid="false"
+              placeholder=" "
+              required
+            />
           </label>
           <label>
             Hyper Island E-mail
@@ -32,16 +38,28 @@
               name="email"
               pattern=".+@hyperisland\.se$"
               title="Email must end with @hyperisland.se"
+              aria-invalid="false"
+              placeholder=" "
               required
             />
           </label>
         </div>
         <div class="nav__buttons">
           <a href="index.html" class="nav__button--back">
-            <img src="assets/icons/back.svg" alt="Back Button" height="48" />
+            <img
+              src="assets/icons/back.svg"
+              alt="Back Button"
+              height="48"
+              draggable="false"
+            />
           </a>
           <button type="submit" class="nav__button--okay disabled">
-            <img src="assets/icons/ok.svg" alt="Okay Button" height="48" />
+            <img
+              src="assets/icons/ok.svg"
+              alt="Okay Button"
+              height="48"
+              draggable="false"
+            />
           </button>
         </div>
       </form>

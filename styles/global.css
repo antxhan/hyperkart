@@ -26,6 +26,11 @@
   /* FONT SIZES */
   --fs-small: 0.8rem;
   --fs-large: 1.5rem;
+
+  /* FONT FAMILIES */
+  --ff-normal: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --ff-shin-go-pro: "Shin Go Pro", sans-serif;
 }
 
 /* GLOBAL -------------------------------------------------------------------- */
@@ -46,10 +51,7 @@ body {
   );
   display: grid;
   grid-template-rows: max-content auto max-content;
-  /* gap: 1rem; */
-  font-family: "Shin Go Pro", sans-serif;
-  /* overflow: hidden; */
-  /* overflow-x: hidden; */
+  font-family: var(--ff-shin-go-pro);
 }
 
 img {
@@ -63,8 +65,22 @@ h1 {
 }
 
 p {
+<<<<<<< HEAD:styles/style.css
   line-height: 1.5;
   text-align: center;
+=======
+  text-wrap: pretty;
+  font-family: var(--ff-normal);
+}
+
+li {
+  font-family: var(--ff-normal);
+}
+
+strong {
+  font-family: var(--ff-shin-go-pro);
+  line-height: 1.25;
+>>>>>>> eebba7339bc78dd490608e6b759132562d329081:styles/global.css
 }
 
 a {
@@ -98,6 +114,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
 .menu-button {
@@ -111,6 +128,7 @@ main {
   gap: 0.5rem;
   align-items: center;
   padding-left: 3rem;
+  font-family: var(--ff-shin-go-pro);
   font-size: var(--fs-large);
   z-index: 1;
   &::before,
@@ -191,34 +209,6 @@ main {
   }
   & h1 {
     text-align: center;
-  }
-}
-
-/* FORM ---------------------------------------------------------------------- */
-
-form {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-form .window {
-  margin-bottom: auto;
-  gap: 0.5rem;
-  & label {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-  }
-  & input {
-    font-family: inherit;
-    font-size: 1rem;
-    padding-inline: 0.5rem;
-    height: 2.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--clr-neutral-700);
   }
 }
 
@@ -328,4 +318,10 @@ footer {
   position: absolute;
   z-index: -1;
   display: none;
+}
+
+/* UTILS --------------------------------------------------------------------- */
+
+.fs-small {
+  font-size: var(--fs-small);
 }

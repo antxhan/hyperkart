@@ -1,0 +1,45 @@
+a {
+  text-decoration: none;
+}
+
+.window {
+  width: min(calc(100% - 2rem), 750px);
+  margin-bottom: auto;
+}
+
+.credits__paragraph {
+  p {
+    margin-bottom: 0.25rem;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:hover {
+    .avatar__image {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.avatar__image {
+  width: 5rem;
+  transition: 200ms;
+}
+
+.avatar__name {
+  font-weight: bold;
+  font-family: inherit;
+}
