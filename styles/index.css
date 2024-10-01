@@ -1,0 +1,9 @@
+.window {
+  width: min(calc(100% - 2rem), 600px);
+}
+
+.home__paragraph {
+  p {
+    margin-bottom: 0.25rem;
+  }
+}
