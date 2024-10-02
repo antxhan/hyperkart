@@ -82,6 +82,10 @@ function recreateWindow(title, paragraph) {
   labels.forEach((label) => {
     label.style.display = "none";
   });
+  const registerParagraph = registerWindow.querySelector(
+    ".register__paragraph"
+  );
+  registerParagraph.style.display = "none";
   h2.innerText = title;
   const p = `<p>${paragraph}</p>`;
   registerWindow.insertAdjacentHTML("beforeend", p);
