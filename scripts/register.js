@@ -93,6 +93,7 @@ document.getElementById("signupForm").addEventListener("submit", (e) => {
   e.preventDefault();
   hideWindow();
   toggleLoading();
+  okayButton.style.display = "none";
 
   const name = nameInput.value;
   const email = emailInput.value;
@@ -120,7 +121,6 @@ document.getElementById("signupForm").addEventListener("submit", (e) => {
       if (data.status === "success") {
         recreateWindow("Success!", "You're all set! Good luck!");
         showWindow();
-        okayButton.style.display = "none";
         document.getElementById("signupForm").reset(); // Reset the form
       } else {
         recreateWindow(
@@ -128,7 +128,6 @@ document.getElementById("signupForm").addEventListener("submit", (e) => {
           "There was a problem with the sign-up. Please try again later."
         );
         showWindow();
-        okayButton.style.display = "none";
       }
     })
     .catch((error) => {
@@ -138,7 +137,6 @@ document.getElementById("signupForm").addEventListener("submit", (e) => {
         "There was a problem with the sign-up. Please try again later."
       );
       showWindow();
-      okayButton.style.display = "none";
       console.error("Error:", error);
     });
 });
