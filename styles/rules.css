@@ -14,9 +14,7 @@ ul ul {
 }
 
 li {
-  margin-bottom: 0.25rem;
   line-height: 1.5rem;
-  padding: 10px;
 }
 
 li::marker {
