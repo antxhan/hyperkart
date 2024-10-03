@@ -39,7 +39,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
 }
 
@@ -62,9 +61,14 @@ img {
 h1 {
   line-height: 1.25;
   text-wrap: balance;
+  margin-bottom: 1rem;
 }
 
 p {
+<<<<<<< HEAD:styles/style.css
+  line-height: 1.5;
+  text-align: center;
+=======
   text-wrap: pretty;
   font-family: var(--ff-normal);
 }
@@ -76,6 +80,7 @@ li {
 strong {
   font-family: var(--ff-shin-go-pro);
   line-height: 1.25;
+>>>>>>> eebba7339bc78dd490608e6b759132562d329081:styles/global.css
 }
 
 a {
